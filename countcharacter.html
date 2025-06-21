@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str=prompt("write word")
+        let char= prompt("write character");
+        sens= confirm("do you want to consider case sensitivty ?")
+        let count = 0
+        if (!sens) {
+        str = str.toLowerCase();
+        char = char.toLowerCase();
+    }
+        for (let i=0 ;i<str.length ;i++)
+        {
+            if( str[i]== char ) {
+                count= count+1 ;
+            }
+
+        }
+        console.log(str.length);
+        console.log(count);
+        
+
+    </script>
+    
+</body>
+</html>
